@@ -8,3 +8,5 @@ brew install --cask latent-space
 ```
 
 The cask downloads the latest public desktop release from `bike-shed-io/latent-space-releases`.
+
+This tap currently targets Apple Silicon Macs only.
