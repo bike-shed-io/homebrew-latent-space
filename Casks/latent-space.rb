@@ -12,6 +12,11 @@ cask "latent-space" do
 
   app "LatentSpace.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-dr", "com.apple.quarantine", "#{appdir}/LatentSpace.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Latent Space",
     "~/Library/Preferences/io.bike-shed.latent-space.plist",
