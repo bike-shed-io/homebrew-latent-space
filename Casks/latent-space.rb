@@ -10,7 +10,7 @@ cask "latent-space" do
   desc "Virtual co-working desktop app with spatial audio and video"
   homepage "https://latent.bike-shed.io"
 
-  app "Latent Space.app"
+  app "LatentSpace.app"
 
   zap trash: [
     "~/Library/Application Support/Latent Space",
